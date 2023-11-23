@@ -5,7 +5,7 @@
 
 
 # a) Escreva o código para a função que calcule a média aritmética das notas.
-def media(notas):
+def media(notas: list) -> float:
     media = sum(notas) / len(notas)
     return media
 #------------------------------------------------------------------------------------------
