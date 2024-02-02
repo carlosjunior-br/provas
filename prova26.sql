@@ -1,7 +1,7 @@
-CREATE DATABASE IF NOT EXISTS info_pessoas;
+CREATE DATABASE if not exists info_pessoas;
 USE info_pessoas;
-CREATE TABLE IF NOT EXISTS pessoas(
-	id int auto_increment primary key,
+CREATE TABLE if not exists pessoas(
+    id int auto_increment primary key,
     nome varchar(100) not null,
     idade int not null,
     genero char(1) not null,
