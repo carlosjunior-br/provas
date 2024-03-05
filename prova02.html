@@ -1,0 +1,53 @@
+<!-- Nessa atividade, você deve criar um formulário em uma página web que atenda aos seguintes requisitos:
+Incluir um campo de texto para o usuário inserir informações;
+Incluir um campo do tipo password para o usuário inserir apenas senhas;
+Incluir um campo de e-mail para o usuário inserir um endereço de e-mail válido;
+Incluir uma lista com 5 checkboxes para o usuário selecionar mais de uma opção;
+Incluir um radiobutton com 2 opções, onde apenas uma pode ser selecionada por vez;
+Incluir um botão de envio (submit) para enviar as informações do formulário;
+Incluir um botão para limpar (reset) o formulário e começar novamente.
+Certifique-se de que o seu formulário esteja funcional e siga as boas práticas de HTML para a criação
+dos elementos. -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para alunos interessados em fazer um curso</title>
+</head>
+<body>
+    <h1>Peencha o formulário abaixo:</h1>
+    <form action="#" method="post">
+        <label for="in_nome">Nome completo: </label>
+        <input type="text" name="nome" id="in_nome"><br>
+        
+        <p>Sexo:</p>
+        <label for="radio_masculino">Masculino</label>
+        <input type="radio" name="sexo" id="radio_masculino" value="Masculino"><br>
+        <label for="radio_feminino">Feminino</label>
+        <input type="radio" name="sexo" id="radio_feminino" value="Feminino"><br>
+                       
+        <p>Área de interesse:</p>
+        <label for="check_desenvolvimento">Desenvolvimento</label>
+        <input type="checkbox" name="area_interesse" id="check_desenvolvimento" value="Desenvolvimento"><br>
+        <label for="check_Marketing">Marketing Digital</label>
+        <input type="checkbox" name="area_interesse" id="check_Marketing" value="Marketing Digital"><br>
+        <label for="check_video">Vídeo</label>
+        <input type="checkbox" name="area_interesse" id="check_video" value="Vídeo"><br>
+        <label for="check_ciencia">Ciência de dados</label>
+        <input type="checkbox" name="area_interesse" id="check_ciencia" value="Ciência de dados"><br>
+        <label for="check_design">Design gráfico</label>
+        <input type="checkbox" name="area_interesse" id="check_design" value="Design gráfico"><br><br>
+        
+        <label for="in_email">E-mail: </label>
+        <input type="email" name="email" id="in_email"><br><br>
+        
+        <label for="in_senha">Senha: </label>
+        <input type="password" name="senha" id="in_senha"><br><br>
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
